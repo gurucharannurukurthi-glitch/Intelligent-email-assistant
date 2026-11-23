@@ -1,0 +1,82 @@
+# ==============================================================================
+# Git Ignore - Intelligent Email Assistant
+# ==============================================================================
+
+# --- Sensitive Environment & Secrets (NEVER COMMIT) ---
+.env
+.env.local
+.env.*.local
+.env.development.local
+.env.test.local
+.env.production.local
+backend/.env
+backend/.env.*
+frontend/.env
+frontend/.env.*
+*.env
+*.pem
+*.key
+*.cert
+*.crt
+*.pfx
+*.p12
+
+# Explicitly keep example environment templates
+!.env.example
+!backend/.env.example
+!frontend/.env.example
+
+# --- Dependencies ---
+node_modules/
+backend/node_modules/
+frontend/node_modules/
+.pnp
+.pnp.js
+
+# --- Build Outputs ---
+dist/
+dist-ssr/
+frontend/dist/
+build/
+out/
+
+# --- Logs & Debugging ---
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# --- Runtime & Storage ---
+.session/
+sessions/
+tmp/
+temp/
+*.tmp
+*.temp
+
+# --- Testing & Coverage ---
+coverage/
+.nyc_output/
+
+# --- Operating System Files ---
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# --- IDE & Editor Configuration ---
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*.bak

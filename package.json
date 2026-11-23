@@ -1,0 +1,11 @@
+{
+  "name": "intelligent-email-assistant",
+  "version": "1.0.0",
+  "description": "Full-stack AI-powered Gmail application with thread summarization and smart reply drafting",
+  "scripts": {
+    "dev:backend": "npm --prefix backend run dev",
+    "dev:frontend": "npm --prefix frontend run dev",
+    "build:frontend": "npm --prefix frontend run build",
+    "start:backend": "npm --prefix backend start"
+  }
+}
